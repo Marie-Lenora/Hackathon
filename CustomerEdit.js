@@ -27,7 +27,7 @@ class Customer {
 
         found = false;
 
-        while(i < size && database[size].password != password)
+        while(i < size && database[i].password != password)
         {
 
             i++
@@ -36,15 +36,15 @@ class Customer {
 
         holdPass = "";
 
-        if(database[size] === password){
-            holdPass = database[size];
+        if(database[i] === password){
+            holdPass = database[i];
             found = true;
         }
 
       return found;
     }
 
-    
+
   
     createChequings() {
       this.chequingAccount = new Chequing(this.name, this.dateOfBirth);
