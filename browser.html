@@ -4,14 +4,28 @@
 <!--after you login successfully-->
 <style>
     .window{
-        border: none;
+        border-style: groove;
+        border-color: black;
+        justify-self: center;
         background-color: lightblue;
         color: black;
         height: 300px;
         width: 485px;
         text-align: left;
+        font-size: 24px;
+        margin: auto auto 200px auto;
+        cursor: pointer;
+        display: block;
+    }
+    .button{
+        border: none;
+        background-color: lightslategray;
+        color: rgb(39, 2, 91);
+        padding: 16px 16px 16px 16px;
+        width: 120px;
+        text-align: center;
         font-size: 16px;
-        margin: 4px 2px;
+        margin: auto;
         cursor: pointer;
         display: block;
     }
@@ -25,7 +39,9 @@
     <window class="window Savings">Savings Account
         <p>Balance: </p>
     </window>
-
+    <a href="http://127.0.0.1:5500/settings.html">
+        <button class="button settings">Settings</button>
+    </a>
 </div>
     <!--need a public customer object that stores the customer who just logged in, currentCustomer?-->
     <!--accessed by the windows to find and display the balance of the accounts-->
