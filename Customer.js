@@ -21,12 +21,15 @@ class Customer {
     search(password) {
     let find = false;
     let i = 0;
-    while (i < size && !find) {
-    if (database[i].getPassword() === password) {
-    find = true;
-    }
+    while (i < size && database[i].password != password) {
     i++;
     }
+
+    if (database[i].getPassword() === password) {
+      find = true;
+      }
+
+
     return find;
     }
     
