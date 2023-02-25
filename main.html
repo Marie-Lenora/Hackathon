@@ -15,14 +15,18 @@
 }
 
 
-.button1 {background-color: #4CAF50;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
+.start {background-color: green;}
+.start:hover {background-color: purple;}
 </style>
 </head>
 <body>
 <div>
-<button class="button button1">Green</button>
-<button class="button button2">Blue</button>
+<button class="button start" onclick="start()">Green</button>
 </div>
+<script>
+    function start(){
+        var btn = document.getElementById("start");
+    }
+</script>
 </body>
 </html>
