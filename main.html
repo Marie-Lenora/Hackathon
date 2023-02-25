@@ -2,33 +2,51 @@
 <head>
 <!--the first thing users see followed by MainGurs-->
 <style>
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-.button {
+.GalaxySpin{
+    width: 200%;
+    height: 200%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
+.button{
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 16px 32px;
+  margin: 15px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  top: 50%;
+  left:50%;
   font-size: 30px;
-  margin: 4px 2px;
   cursor: pointer;
+  z-index: 1;
 }
 
 
-.start {background-color: navy;}
-.start:hover {background-color: royalblue;}
+.start{background-color: navy;}
+.start:hover{background-color: royalblue;}
 </style>
 </head>
 <body>
-<div class="center">
+<div class="section">>
+<video autoplay muted loop id="GalaxySpin">
+    <source src ="GalaxySpinAA-VFX 8mb.mp4" type = "video/mp4">
+</video>
 <a href="http://127.0.0.1:5500/MainGurs.html";>
-<button class="button start">Start</button>
+    <button class="button start">Start</button>
 </a>
 </div>
 </body>
