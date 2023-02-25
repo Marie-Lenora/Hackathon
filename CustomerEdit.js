@@ -1,5 +1,6 @@
 class Customer {
     static database = new Array(10000);
+    
     static size = 0;
     //static accountNumber = 100000;
 
@@ -29,9 +30,7 @@ class Customer {
 
         while(i < size && database[i].password != password)
         {
-
             i++
-
         }
 
         holdPass = "";
@@ -101,4 +100,8 @@ class Customer {
     getCurrentAmount() {
       return this.currentAmount;
     }
+    
   }
+
+
+  export{database,addCustomer,size};
