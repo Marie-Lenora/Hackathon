@@ -3,13 +3,13 @@ class Customer {
     static database = new Array(150);
     static size = 0;
     
+    
     constructor(name, password) {
     this.name = name;
     this.password = password;
     this.chequingAccount = null;
     database[size++] = this;
     }
-    
     getName() {
     return this.name;
     }

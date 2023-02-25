@@ -1,13 +1,12 @@
 public class Chequing extends Customer{
-    private int accountNumber;
     private int totalDepositAmount; 
     private int totalAmountTransferred;
     private int currentAmount;
     private int totalAmountWithdrawn;
 
-    public Chequing(String name, String dateOfBirth, int accountNumber){
-        super(name, dateOfBirth);
-        this.accountNumber = accountNumber;
+    public Chequing(String name, String password){
+        super(name, password);
+        
         totalDepositAmount = 0;
         currentAmount = 50;
     }
