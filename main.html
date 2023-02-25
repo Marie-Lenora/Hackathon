@@ -4,12 +4,24 @@
 </head>
 <body>
     <style>
-        body{
-            background-image: url('radahn.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+        @keyframes menu {
+            0% {background-color: black;}
+            40% {background-color: gray;}
+            45% {background-color: black;}
+            50% {background-color: whitesmoke;}
+            55% {background-color: black;}
+            100%{background-color: black;}
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation-name: menu;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
     </style>
-    <h1> It's Him!</h1>
+    <h1> Lightning?</h1>
 </body>
 </html>
