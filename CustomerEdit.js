@@ -30,7 +30,7 @@ class Customer {
 
         while(i < size && database[i].password != password)
         {
-            i++
+            i++;
         }
 
         holdPass = "";
