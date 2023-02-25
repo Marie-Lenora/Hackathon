@@ -104,4 +104,4 @@ class Customer {
   }
 
 
-  export{database,addCustomer,size};
+  export{database,addCustomer,size,search};
