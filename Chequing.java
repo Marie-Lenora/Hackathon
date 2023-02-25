@@ -16,11 +16,13 @@ public class Chequing extends Customer{
         this.currentAmount += depositAmount;
         this.totalDepositAmount += depositAmount; 
     }
+    
     public void withdraw(int amountWithdrawn){
         this.currentAmount -= amountWithdrawn;
         this.totalAmountWithdrawn += amountWithdrawn;
 
     }
+
     public void transfer(int amount){
         this.currentAmount -= amount;
         this.totalAmountTransferred += amount; 
