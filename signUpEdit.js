@@ -7,7 +7,8 @@ document.getElementById("SignUpBut").onclick = function(){
     var Pass = document.getElementById("SignUpPass").value;
     
     database[size].addCustomer(userN,Pass);
-
     console.log(userN, Pass);  
+
+    
      
     }
