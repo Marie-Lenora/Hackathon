@@ -1,9 +1,11 @@
 public class Customer
 {
+   static int [] database = new int [10000];
    static int size = 0;
    private String name;
    private String dateOfBirth;
    static int accountNumber = 100000;
+   private Chequing chequingAccount
    // Savings savingsAccount, Investment investmentAccount; 
 
    public Customer(String name, String dateOfBirth)
